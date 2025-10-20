@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "66069ff93007b006635c0245",
+    "brandName": "Ward, Hand and Ortiz",
+    "yearFounded": 1970,
+    "headquarters": "Jastside",
+    "numberOfLocations": 2132,
+    "createdAt": "2025-10-20T09:37:34.903Z",
+    "updatedAt": "2025-10-20T09:37:34.903Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c0246",
+    "brandName": "Ergonomic Frozen Bacon",
+    "yearFounded": 1600,
+    "headquarters": "Gavinstead",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.910Z",
+    "updatedAt": "2025-10-20T09:37:34.910Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c0247",
+    "brandName": "Breitenberg, Greenholt and Ledner",
+    "yearFounded": 1982,
+    "headquarters": "Fort Lenna",
+    "numberOfLocations": 1000,
+    "createdAt": "2025-10-20T09:37:34.914Z",
+    "updatedAt": "2025-10-20T09:37:34.914Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c0248",
+    "brandName": "Modern Granite Fish",
+    "yearFounded": 1970,
+    "headquarters": "Kundebury",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.917Z",
+    "updatedAt": "2025-10-20T09:37:34.917Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c0249",
+    "brandName": "Gorgeous Granite Pizza",
+    "yearFounded": 1980,
+    "headquarters": "Jonesborough",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.920Z",
+    "updatedAt": "2025-10-20T09:37:34.920Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c024a",
+    "brandName": "Oriental Plastic Pants",
+    "yearFounded": 1970,
+    "headquarters": "Wardfort",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.922Z",
+    "updatedAt": "2025-10-20T09:37:34.922Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c024b",
+    "brandName": "Refined Granite Towels",
+    "yearFounded": 1600,
+    "headquarters": "Lemkeland",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.924Z",
+    "updatedAt": "2025-10-20T09:37:34.924Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c024c",
+    "brandName": "Corkery Inc",
+    "yearFounded": 1935,
+    "headquarters": "DuBuqueburgh",
+    "numberOfLocations": 9200,
+    "createdAt": "2025-10-20T09:37:34.926Z",
+    "updatedAt": "2025-10-20T09:37:34.926Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c024d",
+    "brandName": "Licensed Concrete Tuna",
+    "yearFounded": 1600,
+    "headquarters": "West Mylesboro",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.928Z",
+    "updatedAt": "2025-10-20T09:37:34.928Z",
+    "__v": 0
+  },
+  {
+    "_id": "66069ff93007b006635c024e",
+    "brandName": "Generic Cotton Pizza",
+    "yearFounded": 1600,
+    "headquarters": "North Ralphport",
+    "numberOfLocations": 1,
+    "createdAt": "2025-10-20T09:37:34.929Z",
+    "updatedAt": "2025-10-20T09:37:34.929Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f602e4803b21f16039d67f",
+    "brandName": "Padberg - Robel",
+    "yearFounded": 1786,
+    "headquarters": "North Javiertown, Mauritania",
+    "numberOfLocations": 269,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.203Z",
+    "updatedAt": "2025-10-20T09:37:40.203Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d680",
+    "brandName": "Paucek, McDermott and Roberts",
+    "yearFounded": 2023,
+    "headquarters": "Centennial, Bangladesh",
+    "numberOfLocations": 4404,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.203Z",
+    "updatedAt": "2025-10-20T09:37:40.203Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d681",
+    "brandName": "Graham, McKenzie and Waelchi",
+    "yearFounded": 1950,
+    "headquarters": "Leuschketown, Democratic People's Republic of Korea",
+    "numberOfLocations": 5,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.203Z",
+    "updatedAt": "2025-10-20T09:37:40.203Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d682",
+    "brandName": "Oberbrunner, Prohaska and Kassulke",
+    "yearFounded": 1802,
+    "headquarters": "Jacintoworth, Reunion",
+    "numberOfLocations": 3000,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d683",
+    "brandName": "FAY LLC",
+    "yearFounded": 1609,
+    "headquarters": "Harrisonburg, Mayotte",
+    "numberOfLocations": 1147,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d684",
+    "brandName": "Hayes Group & Sons",
+    "yearFounded": 1618,
+    "headquarters": "Richland, Kiribati",
+    "numberOfLocations": 1262,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d685",
+    "brandName": "Kessler Inc",
+    "yearFounded": 1629,
+    "headquarters": "Remote / Virtual HQ",
+    "numberOfLocations": 4348,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d686",
+    "brandName": "help Industries",
+    "yearFounded": 1652,
+    "headquarters": "Boynton Beach, Ireland",
+    "numberOfLocations": 4291,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d687",
+    "brandName": "Witting - Heller",
+    "yearFounded": 1900,
+    "headquarters": "Port Edythfurt, Guadeloupe",
+    "numberOfLocations": 2658,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  },
+  {
+    "_id": "68f602e4803b21f16039d688",
+    "brandName": "Schimmel Group International Group",
+    "yearFounded": 1714,
+    "headquarters": "Cupertino, Svalbard & Jan Mayen Islands",
+    "numberOfLocations": 1099,
+    "__v": 0,
+    "createdAt": "2025-10-20T09:37:40.204Z",
+    "updatedAt": "2025-10-20T09:37:40.204Z"
+  }
+]
