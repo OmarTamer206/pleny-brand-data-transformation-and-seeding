@@ -1,98 +1,100 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# 🏷️ Brand Transformer CLI – Technical Assessment (Task 2)
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This repository contains **Task 2** of the technical assessment for the **Software and Data Engineer position at Pleny Software**. The goal is to build a robust **CLI-based data transformation and seeding tool** for a brands collection using **[Nest.js](https://nestjs.com/)**, **MongoDB**, and **Mongoose**.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 📌 Project Overview
 
-## Description
+This CLI tool enables:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- Importing and transforming malformed brand data into a clean, normalized schema.
+- Seeding the database with diverse valid test brands using Faker Library.
+- Exporting the entire collection to a formatted `.json` file.
 
-## Project setup
+All features are accessible via an interactive **command-line interface (CLI)** with menu-driven navigation.
 
-```bash
-$ npm install
-```
+## 🛠️ Tech Stack
 
-## Compile and run the project
+- **Nest.js + TypeScript** – Modular CLI architecture
+- **MongoDB** – NoSQL database for flexible document handling
+- **Mongoose** – ODM with schema enforcement
+- **Faker.js** – Fake brand data generation
+- **ExcelJS** – CSV export of seeded documents
+- **Node readline/promises** – CLI interface with user prompts
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+git clone https://github.com/OmarTamer206/pleny-brand-data-transformation-and-seeding.git
+cd pleny-brand-data-transformation-and-seeding
 ```
 
-## Run tests
+### 2. Install Dependencies
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+npm install
 ```
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+### 3. Environment Configuration
 
 ```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
+MONGO_URI=mongodb://localhost:27017/brands
+PORT=3000
 ```
+The .env file is excluded from version control for security.
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### 4. Running the Application
+#### Development
+```bash
+npm run start
+```
+#### Watch Mode (Auto Reload)
+```bash
+npm run start:dev
+```
+#### Production
+```bash
+npm run build
+npm run start:prod
+```
+### 5. Menu Options & Functionality
+After starting the CLI app, you'll see the following options:
 
-## Resources
+#### 1) Transform Brands (Task 1)
+This opens a sub-menu with two key options:
+1) Import data from brands.json
+    * Reads brands.json from the src/brands/ directory.
+    * Accepts malformed or legacy data formats.
+    * Parses _id values into ObjectId
+    * Inserts all documents into the MongoDB brands collection.
+2) Transform existing documents
+    * Processes all documents in the brands collection.
+    * Normalizes fields to a consistent schema:
+    * Ensures valid brandName, yearFounded, headquarters, numberOfLocations.
+    * Fills in fallback values if fields are missing.
+    * Replaces each document in-place.
 
-Check out a few resources that may come in handy when working with NestJS:
+#### 2) Seed Brands (Task 2)
+* Seeds the database with 10 diverse, schema-adherent test brands using faker.
+* Each brand includes: brandName, yearFounded, headquarters, numberOfLocations, caseNote 
+* Also fetches all existing documents and includes them in the export.
+* Generates a CSV export of both old and new records using exceljs.
+* Output file is saved in the project root with a unique name like:
+    * seeded-brands.csv
+    * seeded-brands(1).csv
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+#### 3) Export Brands (Task 3)
+* Reads all documents from the brands collection.
+* Outputs them to a .json file.
+* Skips export if the collection is empty.
+* Output file is saved in the project root with a unique name like:
+    * exported-brands.json
+    * exported-brands(1).json
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+#### 4) Exit Option
+* Closes the CLI cleanly
+* Disconnects from MongoDB
+* Shuts down the Nest.js app context
